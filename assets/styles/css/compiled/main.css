@@ -175,7 +175,8 @@ footer {
       border: 0;
       background-color: #f3d347;
       color: #fff;
-      outline: 0; }
+      outline: 0;
+      text-transform: uppercase; }
       #home .search-pane .search-form button:focus {
         outline: 0; }
   #home .search-pane .menu {
