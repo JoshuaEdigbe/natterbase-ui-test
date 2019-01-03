@@ -188,6 +188,17 @@ footer {
       align-items: center;
       border: 0;
       flex: 0 0 65px; }
+      #home .search-pane .menu-item.active {
+        position: relative; }
+        #home .search-pane .menu-item.active::before {
+          content: "";
+          width: 5px;
+          height: 5px;
+          background-color: red;
+          position: relative;
+          top: 12px;
+          left: 8px;
+          border-radius: 50%; }
       #home .search-pane .menu-item > .icon {
         font-size: 23px; }
       #home .search-pane .menu-item > .text {
@@ -203,13 +214,13 @@ footer {
     color: #ffffff;
     line-height: 46px;
     padding: 0 15px;
-    font-size: .8rem;
+    font-size: 0.8rem;
     text-transform: uppercase; }
   #home .hero .category-menu-list {
     box-shadow: 0px 3px 3px rgba(159, 155, 155, 0.25); }
     #home .hero .category-menu-list-item {
       height: 40px;
-      font-size: .7rem;
+      font-size: 0.7rem;
       border-bottom: 1px solid #eee; }
       #home .hero .category-menu-list-item > a {
         height: 100%;
@@ -244,7 +255,7 @@ footer {
   #home .explore-content-title {
     padding: 20px;
     font-size: 12px;
-    border: 0.75px solid #E5E5E5;
+    border: 0.75px solid #e5e5e5;
     text-transform: uppercase; }
   #home .explore-content-body {
     padding: 30px 0px;
