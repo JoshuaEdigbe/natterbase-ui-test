@@ -1,0 +1,242 @@
+#home {
+  header {
+    height: 46px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(159, 155, 155, 0.25);
+    display: flex;
+    flex-direction: row-reverse;
+
+    nav {
+      display: flex;
+      flex-direction: row-reverse;
+      .nav-list {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+
+        &-item {
+          margin-right: 30px;
+
+          &.login {
+            position: relative;
+            &::after {
+              content: "";
+              width: 2px;
+              height: 17.5px;
+              background-color: #4e5051;
+              position: absolute;
+              top: -3px;
+              right: -17px;
+            }
+          }
+
+          &.signup {
+            > a {
+              color: $primary;
+            }
+          }
+
+          a {
+            text-decoration: none;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+
+  .search-pane {
+
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+
+    .logo{
+      margin-right: 60px;
+    }
+    .search-form {
+      margin-right: 30px;
+      $search-input-height: 41px;
+
+      width: 600px;
+      height: 41px;
+      display: flex;
+
+      .search-input {
+        flex: 1;
+        position: relative;
+
+        input {
+          width: 100%;
+          height: 100%;
+          border: 0;
+          background-color: #f2f2f2;
+          padding-left: 45px;
+          outline: 0;
+          font-size: 14px;
+        }
+
+        > .icon {
+          position: absolute;
+          line-height: $search-input-height;
+          top: 2px;
+          left: 20px;
+          font-size: 20px;
+          color: $gray;
+        }
+      }
+
+      button {
+        width: 106px;
+        border: 0;
+        background-color: #f3d347;
+        color: #fff;
+        outline: 0;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+    .menu {
+      display: flex;
+
+      &-item {
+        background-color: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0;
+        flex: 0 0 65px;
+
+        > .icon {
+          font-size: 23px;
+        }
+
+        > .text {
+          font-size: 9px;
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
+
+  .hero{
+    .category-menu{
+      flex: 0 0 243px;
+      margin-right: 20px;
+      &-title{
+        $height: 46px;
+        height: $height;
+        background-color: $primary;
+        color: $white;
+        line-height: $height;
+        padding: 0 15px;
+        font-size: .8rem;
+        text-transform: uppercase;
+      }
+
+      &-list{
+
+        box-shadow: 0px 3px 3px rgba(159, 155, 155, 0.25);
+
+        &-item{
+          height: 40px;
+          font-size: .7rem;
+          border-bottom: 1px solid #eee;
+          > a{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+            color: #757575;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    &-carousel{
+      flex: 1;
+      
+
+      .carousel-inner{
+        height: 367px;  
+        .carousel-item{
+          height: inherit;
+          
+          .carousel-caption{
+            text-align: left;
+            height: 100%;
+            width: 100%;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            padding-top: 16%;
+            padding-left: 50px;
+            padding-right: 30%;
+            background-color: rgba(0, 0, 0, 0.637);
+
+          }
+        }
+      }
+    }
+  }
+
+  .explore {
+
+    &-content{
+      background-color: $white;
+      box-shadow: 0px 4px 4px rgba(133, 128, 128, 0.25);
+
+      &-title{
+        padding: 20px;
+        font-size: 12px;
+        border: 0.75px solid #E5E5E5;
+        text-transform: uppercase;
+      }
+
+      &-body{
+        padding: 30px 0px;
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+          width: 200px;
+          margin: 0 33px;
+
+          &--title{
+            font-size: 12px;
+            font-weight: normal;
+            margin:3px 0;
+      
+          }
+
+          &--rating-container{
+            color: $warning;
+            margin-bottom: 7px;
+          }
+
+          &--price-container{
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+
+            .product-price{
+              &.old{
+                color: $gray;
+                text-decoration: line-through;
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+
