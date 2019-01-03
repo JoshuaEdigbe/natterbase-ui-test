@@ -46,3 +46,15 @@ footer{
     padding: 29px;
   }
 }
+
+.carousel-indicators .active {
+  background-color: $warning;
+}
+.carousel-indicators li {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  top: -9px;
+}

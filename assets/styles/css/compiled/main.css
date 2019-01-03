@@ -99,6 +99,17 @@ footer {
     background-color: #000000;
     padding: 29px; }
 
+.carousel-indicators .active {
+  background-color: #F3D347; }
+
+.carousel-indicators li {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  top: -9px; }
+
 #home header {
   height: 46px;
   background-color: #fff;
